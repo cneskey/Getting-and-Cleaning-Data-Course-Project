@@ -84,5 +84,5 @@ names(test_train_mean_std_AVGs) <- gsub("-X", "-X Average", names(test_train_mea
 names(test_train_mean_std_AVGs) <- gsub("-Y", "-Y Average", names(test_train_mean_std_AVGs))
 names(test_train_mean_std_AVGs) <- gsub("-Z", "-Z Average", names(test_train_mean_std_AVGs))
 
-write.table(test_train_mean_std_AVGs, file = "./tidy_data.txt")
+write.table(test_train_mean_std_AVGs, file = "./tidy_data.txt", row.name=FALSE)
 
